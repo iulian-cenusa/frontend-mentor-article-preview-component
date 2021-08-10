@@ -1,0 +1,76 @@
+/* This CSS file contains the styles for main component and childs*/
+
+#drawers{
+    border-top-left-radius: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.container h1{
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+.container p{
+    color: hsl(214, 17%, 51%);
+    margin: 1em 0 0 0;
+    font-weight: 500;
+}
+
+#container-bottom{
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0 0 0;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(214, 17%, 51%);
+
+}
+#avatar{
+    width: 20%;
+    border-radius: 50%;
+}
+
+#container-bottom-info{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5em 0 0;
+}
+
+#name{
+    color: hsl(217, 19%, 35%);   
+    font-weight: 700;
+}
+
+#share{
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    display: none;
+}
+
+input + label + #share-popup {
+    display: none;
+}
+
+input:checked + label + #share-popup {
+    display: flex;
+}
+
+#share-popup{
+    width: 350pc;
+    height: 100px;
+}
